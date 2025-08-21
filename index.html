@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliet Ndibazza - Generative AI Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Lighter gray background */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-section {
+            background-color: #111827; /* Dark background like the example */
+            color: white;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2.5rem;
+        }
+        .module-card {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-color: #4f46e5;
+        }
+        .submission-item {
+            border-left: 4px solid #4f46e5;
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+            transition: background-color 0.3s;
+        }
+        .submission-item:hover {
+            background-color: #f9fafb;
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #4f46e5;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-900">Juliet Ndibazza</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about-me" class="text-gray-600 nav-link">About Me</a>
+                <a href="#about-course" class="text-gray-600 nav-link">The Course</a>
+                <a href="#submissions" class="text-gray-600 nav-link">My Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container mx-auto px-6 py-20 md:py-28">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                        <span class="gradient-text">Generative AI</span> for Work & Research
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-300">
+                        A portfolio showcasing my journey and projects in leveraging AI for enhanced productivity and innovation in research.
+                    </p>
+                    <a href="#submissions" class="mt-8 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+                        Explore My Submissions
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://placehold.co/500x400/111827/4f46e5?text=Future+Image" alt="Abstract AI graphic" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+
+        <!-- About Me Section -->
+        <section id="about-me" class="section-card">
+            <h2 class="text-3xl font-bold mb-6 text-gray-900">About Me</h2>
+            <p class="text-lg leading-relaxed text-justify">
+                I am an epidemiologist with extensive experience at the intersection of clinical care, public health research, and academic teaching. My current focus is on mentoring and empowering the next generation of clinical and public health researchers in low-resource settings. I am dedicated to leveraging innovative tools and methodologies to advance research and education.
+            </p>
+        </section>
+
+        <!-- About the Course Section -->
+        <section id="about-course" class="section-card">
+            <h2 class="text-3xl font-bold mb-4 text-gray-900">About the Course</h2>
+            <p class="text-lg leading-relaxed mb-12 text-justify">
+                This 8-week course, "Generative AI for Work & Research Productivity," equips participants with skills to use no-code AI tools for task automation through workshops, personalized feedback, and a capstone project.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Module Cards with Icons -->
+                <div class="module-card">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="font-bold text-lg mb-2">Websites & Docs</h3>
+                    <p class="text-gray-600 text-sm text-left">Create websites, papers, and presentations with AI assistants.</p>
+                </div>
+                <div class="module-card">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    <h3 class="font-bold text-lg mb-2">Data Analysis</h3>
+                    <p class="text-gray-600 text-sm text-left">Master AI tools for data analysis and automated reporting.</p>
+                </div>
+                <div class="module-card">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <h3 class="font-bold text-lg mb-2">Research & Text Analysis</h3>
+                    <p class="text-gray-600 text-sm text-left">Use AI for literature search, text analysis, and knowledge synthesis.</p>
+                </div>
+                <div class="module-card">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    <h3 class="font-bold text-lg mb-2">Custom GPTs</h3>
+                    <p class="text-gray-600 text-sm text-left">Build custom chatbots for research assistance and knowledge management.</p>
+                </div>
+                <div class="module-card">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h3 class="font-bold text-lg mb-2">Task Automation</h3>
+                    <p class="text-gray-600 text-sm text-left">Automate repetitive research tasks with AI-driven workflows.</p>
+                </div>
+                <div class="module-card">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.875 9.168-3.918"></path></svg>
+                    <h3 class="font-bold text-lg mb-2">Communication</h3>
+                    <p class="text-gray-600 text-sm text-left">Use AI for research dissemination via summaries and visuals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Weekly Submissions Section -->
+        <section id="submissions" class="section-card">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900">My Weekly Submissions</h2>
+            
+            <div class="space-y-8">
+                <div class="submission-item">
+                    <h3 class="font-bold text-xl text-gray-800">Week 1: Introduction to LLMs and Project Websites</h3>
+                    <p class="text-gray-600">Exploring the fundamentals of Large Language Models and building a simple research website.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block font-semibold">View Submission (Link to be added)</a>
+                </div>
+                <div class="submission-item">
+                    <h3 class="font-bold text-xl text-gray-800">Week 2: Automated Data Analysis with AI</h3>
+                    <p class="text-gray-600">A report on using AI tools to analyze a sample dataset and generate visualizations.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block font-semibold">View Submission (Link to be added)</a>
+                </div>
+                <div class="submission-item">
+                    <h3 class="font-bold text-xl text-gray-800">Week 3: Literature Review with AI Assistants</h3>
+                    <p class="text-gray-600">A synthesized literature review on a chosen topic, created with the help of AI research tools.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block font-semibold">View Submission (Link to be added)</a>
+                </div>
+                <div class="submission-item">
+                    <h3 class="font-bold text-xl text-gray-800">Week 4: Building a Custom Research Chatbot</h3>
+                    <p class="text-gray-600">Development and demonstration of a custom GPT for a specific research use case.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block font-semibold">View Submission (Link to be added)</a>
+                </div>
+                 <div class="submission-item">
+                    <h3 class="font-bold text-xl text-gray-800">Week 5: Automating Research Workflows</h3>
+                    <p class="text-gray-600">Designing and implementing an automated workflow for a repetitive research task.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block font-semibold">View Submission (Link to be added)</a>
+                </div>
+                <div class="submission-item">
+                    <h3 class="font-bold text-xl text-gray-800">Week 6: AI-Powered Science Communication</h3>
+                    <p class="text-gray-600">Creating a video abstract and an infographic for a research paper using AI tools.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block font-semibold">View Submission (Link to be added)</a>
+                </div>
+                <div class="submission-item">
+                    <h3 class="font-bold text-xl text-gray-800">Week 7: Capstone Project Development</h3>
+                    <p class="text-gray-600">Progress report and peer feedback on the final capstone project.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block font-semibold">View Submission (Link to be added)</a>
+                </div>
+                <div class="submission-item">
+                    <h3 class="font-bold text-xl text-gray-800">Week 8: Final Project Showcase</h3>
+                    <p class="text-gray-600">Presentation of the final AI solution developed during the course.</p>
+                    <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block font-semibold">View Submission (Link to be added)</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Juliet Ndibazza. All Rights Reserved.</p>
+            <p class="mt-2 text-gray-400">
+                <a href="https://scholar.google.com/citations?user=julietndibazza" target="_blank" rel="noopener noreferrer" class="hover:underline">Google Scholar Profile</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
